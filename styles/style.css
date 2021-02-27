@@ -46,13 +46,11 @@
 /* Profile card */
 
 .section-profile{
-    height: 500px;
-    width: 100%;
+    width: 100%; height: 500px;
     background-color: #000005;
 }
 
 .profile-container{
-    min-width: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,17 +138,6 @@
 
 
 
-
-
-/* Projects*/
-
-.section-projects{
-    width: 100%; height: 500px;
-}
-
-
-
-
 /* Footer*/
 
 footer{
@@ -170,8 +157,36 @@ footer i{
 }
 
 /* Responsive */
-@media(max-width: 600px){
-    h1{
-        color: red;
+@media(max-width: 768px){
+    /* Profile */
+    .profile-img{
+        width: 12rem; height: 12rem;
     }
+    .profile-name{
+        font-size: 2.5rem;    
+    }
+    .profile-resume{
+        padding: 1.5rem;
+        padding-top: 1rem;
+        font-size: 1.2rem;
+    }
+
+    /* Skills*/
+    .section-skills{
+        width: 90%;
+    }
+    .section-skills .container{
+        flex-direction: column;
+    }
+    .skill-item{
+        font-size: 1rem;
+    }
+    .central{
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+    .skills-list{
+        padding-bottom: 1rem;
+    }
+
 }
