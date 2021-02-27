@@ -135,9 +135,6 @@
     text-decoration: none;
 }
 
-
-
-
 /* Footer*/
 
 footer{
@@ -154,6 +151,9 @@ footer a{
 }
 footer i{
     margin-left: 20px;
+}
+footer P{
+    margin: 0.5rem;
 }
 
 /* Responsive */
@@ -186,7 +186,21 @@ footer i{
         border-bottom: 1px solid #ccc;
     }
     .skills-list{
+        padding-top: 1.5rem;
         padding-bottom: 1rem;
     }
+
+    /* Footer */
+    footer{
+        height: 5rem;
+        margin-top: 2.5rem;
+        padding-top: 1rem;
+        text-align: center;
+        border-top: 1px solid #ddd;
+    }
+    footer i{
+        margin-left: 1rem;
+    }
+    
 
 }
