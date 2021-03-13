@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+/*===== VARIABLES CSS =====*/
+:root{
+    --color-dark: #000000;
+    --color-primary: #29378f;
+    --color-secundary: #292929;
+    --color-font: #e8e4fd;
+}
 /* General Settings*/
 
 *{
@@ -20,7 +27,7 @@
     color: 0e1627;
     padding: 0px 15px;
     height: 40px;
-    background-color: #29378f;
+    background-color: var(--color-primary);
 }
 
 .navbar-list, .list-item, .header nav{
@@ -36,19 +43,19 @@
     padding: 5px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #e8e4fd;
+    color: var(--color-font);
 }
 
 .navbar-list a:hover{
-    color: #000000;
-    border-bottom: 1px solid #000000;
+    color: var(--color-dark);
+    border-bottom: 1px solid var(--color-dark);
 }
 
 /* Profile card */
 
 .section-profile{
     width: 100%; height: 500px;
-    background-color: #000005;
+    background-color: var(--color-dark);
 }
 
 .profile-container{
@@ -75,7 +82,7 @@
 	font-size: 3.5rem;
 	text-align:center;
     letter-spacing:-0.02em;
-    color: #e8e4fd;
+    color: var(--color-font);
 }
 
 .profile-resume{
@@ -84,16 +91,16 @@
 	margin: 0px;
 	line-height:1.5;
     font-size:1.3rem;
-    color: #e8e4fd;
+    color: var(--color-font);
 } 
 
 /* Skils */
 
 .section-skills{
-    background-color: #29378f;
+    background-color: var(--color-primary);
     width: 85%;
     margin-top: -80px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-font);
     border-radius: 10px;
 }
 
@@ -107,7 +114,7 @@
     flex: 1;
     text-align: center;
     padding: 60px 25px;
-    color: #e8e4fd;
+    color: var(--color-font);
 }
 
 .skill-title{
@@ -116,8 +123,8 @@
 }
 
 .central{
-    border-right: 1px solid #CCC;
-    border-left: 1px solid #CCC;
+    border-right: 1px solid var(--color-font);
+    border-left: 1px solid var(--color-font);
 }
 
 .skill-item{
@@ -145,7 +152,7 @@
 .section-timeline h1{
     text-align: center;
     font-size: 45px;
-    color: #393939;
+    color: var(--color-dark);
 }
 
 .section-timeline .timeline{
@@ -159,7 +166,7 @@
     content: "";
     position: absolute;
     width: 1px; height: calc(100% - 200px);
-    background-color: #000000;
+    background-color: var(--color-dark);
     left: 50%;
     transform: translateX(-50%);
 }
@@ -171,7 +178,7 @@
 .section-timeline .timeline .row .event {
     padding: 20px;
     background-color: #29378f;
-    color: #fff;
+    color: var(--color-font);
     width: calc(50% - 30px);
     position: relative;
     box-shadow: 0 10px 20px rgba(57, 112, 255, 0.3);   
@@ -182,7 +189,7 @@
     position: absolute;
     width: 20px; height: 20px;
     border-radius: 50%;
-    background-color: #000000;
+    background-color: var(--color-dark);
     top: 50%;
     transform: translateY(-50%);
 }
@@ -242,12 +249,12 @@ footer{
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     text-align: center;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--color-dark);
 }
 
 footer a{
     text-decoration: none;
-    color: black;
+    color: var(--color-dark);
 }
 footer i{
     margin-left: 20px;
@@ -282,8 +289,8 @@ footer P{
         font-size: 1rem;
     }
     .central{
-        border-top: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;
+        border-top: 1px solid var(--color-font);
+        border-bottom: 1px solid var(--color-font);
     }
     .skills-list{
         padding-top: 1.5rem;
@@ -311,7 +318,7 @@ footer P{
         margin-top: 2.5rem;
         padding-top: 1rem;
         text-align: center;
-        border-top: 1px solid #ddd;
+        border-top: 1px solid var(--color-font);
     }
     footer i{
         margin-left: 1rem;
